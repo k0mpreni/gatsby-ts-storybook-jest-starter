@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-storybook-ts-jest-starter",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A Gatsby starter with Typescript, Storybook, Jest",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -11,21 +11,49 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "gatsby": "^2.19.7",
+    "gatsby-plugin-typescript": "^2.1.27",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/react": "^5.3.13",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.2",
+    "@types/react": "^16.9.20",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-test-renderer": "^16.9.2",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-gatsby": "^0.2.29",
+    "babel-preset-react-app": "^9.1.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "react-test-renderer": "^16.12.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.7.5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/brainlulz/gatsby-ts-storybook-jest-starter"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/brainlulz/gatsby-ts-storybook-jest-starter/issues"
   }
 }
